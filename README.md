@@ -1,3 +1,3 @@
-# discourse-likes-as-usernames
+# Show likes as usernames
 
-Discord plugin to show post likes as a list of user names, not just avatars.
+A simple, CSS-based Discord theme component that changes the way post likes are rendered from avatar images to a simple list of usernames.
