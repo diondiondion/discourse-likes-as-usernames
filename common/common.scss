@@ -1,14 +1,17 @@
-.hello-world-banner {
-    height: 300px;
-    width: 100%;
-    background: red;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1em;
+/* Hide avatar image */
+.who-liked .trigger-user-card img {
+    display: none;
 }
 
-.hello-world {
-    font-size: 8em;
-    color: white;
+/*
+ * Use data attribute to render the user name into
+ * a pseudo element, followed by a comma
+ */
+.who-liked .trigger-user-card::before {
+    content: attr(data-user-card) ', ';
+}
+
+/* Don't render a comma after the last user name */
+.who-liked .trigger-user-card:nth-last-child(1)::before {
+    content: attr(data-user-card);
 }
